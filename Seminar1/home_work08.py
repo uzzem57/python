@@ -3,3 +3,11 @@
 # на два прямоугольника).
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+n = int(input())
+m = int(input())
+k = int(input())
+if k < n * m and ((k % n == 0) or (k % m == 0)):
+    print("yes")
+else:
+    print("no")
