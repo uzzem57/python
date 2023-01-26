@@ -6,3 +6,18 @@
 # Вам требуется написать программу, которая проверяет счастливость билета.
 # 385916 -> yes
 # 123456 -> no
+
+a = input()
+summa1 = 0
+summa2 = 0
+if len(a) != 6:
+    print("Вы ввели не верное количество цифр")
+else:
+    for i in range(0,3):
+        summa1 = summa1 + int(a[i])
+    for i in range(3,6):
+        summa2 = summa2 + int(a[i])
+if summa1 == summa2:
+    print("yes")
+else:
+    print("no")
