@@ -11,7 +11,9 @@ S = int(input())
 print("Введите произведение чисел")
 P = int(input())
 for i in range(1, P):
-    if P % i ==0 and i + int(P/i) == S:
+    if P % i == 0 and i + int(P/i) == S:
         print(int(P/i), i)
         break
+
+
 

@@ -1,22 +1,14 @@
-a = int(input())
-n = 0
-summa = 1
-n0 = 1
-i = 0
-while n <= a:
-    summa = n
-    n = n0 + n
-    n0 = summa
-    i += 1
-    if a == n:
-        print(i)
-        break
-if a < 0 or a != n:
-    print(-1)
-elif a == 0:
-    print(0)
-
-
-
-
-
+n = 4
+m = 5
+triangle = []
+for i in range(1):
+    triangle.append([1]*(m))
+for i in range(1, n):
+    triangle.append([1] + [0]*m)
+for i in range(1, n):
+    for j in range(1, m):
+        triangle[i][j] = triangle[i][j-1] + triangle[i-1][j]
+for i in range(0, n):
+    for j in range(0, m):
+        print(triangle[i][j], end=" ")
+    print()
