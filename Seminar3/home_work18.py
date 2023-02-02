@@ -5,3 +5,20 @@
 # 1 2 3 4 5
 # 6
 # -> 5
+print("Введите количество элементов в массиве: ")
+n = int(input())
+my_list = []
+print("Введите элементы в массив: ")
+for i in range(n):
+    a = int(input())
+    my_list.append(a)
+print("Введите число поиска: ")
+x = int(input())
+index = 0
+start_data = abs(x-(my_list[0]))
+for i in range(1, n):
+    if abs(x-(my_list[i])) < start_data:
+        index = i
+        start_data = abs(x-(my_list[i]))
+
+print(f"Самый близкий по величине элемент к заданному числу равен {my_list[index]}")
