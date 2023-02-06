@@ -12,3 +12,20 @@
 # заданной во входном файле грядки.
 # 4 -> 1 2 3 4
 # 9
+print("Введите количество кустов черники")
+n = int(input())
+print("Введите число ягод на соответствующем кусте через пробел")
+a = list(map(int, input().split()))
+
+my_count = 0
+
+for i in range(n):
+	temp = sum(a[i:i+3])
+	if temp > my_count:
+		my_count = temp
+if a[0] + a[-1] + a[-2] > my_count:
+	my_count = a[0] + a[-1] + a[-2]
+if a[0] + a[1] + a[-1] > my_count:
+	my_count = a[0] + a[1] + a[-1]
+
+print(f"Максимальное число ягод - {my_count}")
