@@ -1,7 +1,9 @@
-
-num = [1, 2, 3, 5, 1, 5, 3, 10]
-print([i for i in num if num.count(i) == 1])
-
+a = (1,)
+b = ('R',)
+c = ('A',)
+d = (2,)
+result = (a)*3 +(b)*5 + (c)*8 + (d)*2
+print(result)
 
 
 
