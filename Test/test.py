@@ -1,9 +1,9 @@
-a = (1,)
-b = ('R',)
-c = ('A',)
-d = (2,)
-result = (a)*3 +(b)*5 + (c)*8 + (d)*2
-print(result)
+a = [1,2,3,4,1,2,4,6,6,6]
+s = 0
+for i in range(len(a) - 1):
+    s += a[i + 1:].count(a[i])
+print(s)
+
 
 
 
