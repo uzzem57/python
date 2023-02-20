@@ -22,7 +22,7 @@
 # 32.72727272727273
 
 data1 = open('pipes.txt', 'r', encoding='utf - 8')
-data2 = open("text.txt", "w", encoding='utf - 8')
+data2 = open('time.txt', 'w', encoding='utf - 8')
 my_line = [line.rstrip() for line in data1]
 my_list = []
 my_list_ret = []
